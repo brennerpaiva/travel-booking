@@ -4,6 +4,7 @@ import React from "react";
 import Input from "@/components/Input";
 import DatePicker from "@/components/DatePicker";
 import CurrencyInput from "@/components/CurrencyInput";
+import Button from "@/components/Button";
 
 const TripSearch = () => {
   return (
@@ -17,6 +18,7 @@ const TripSearch = () => {
           <DatePicker placeholderText="Data de Ida" onChange={() => {}} />
           <CurrencyInput placeholder="Orçamento" />
         </div>
+        <Button>Buscar</Button>
       </div>
     </div>
   );
