@@ -9,16 +9,16 @@ import Button from "@/components/Button";
 const TripSearch = () => {
   return (
     <div className="container mx-auto p-5">
-      <h2 className="font-semibold text-2xl text-primaryDarker text-center">
+      <h1 className="font-semibold text-2xl text-primaryDarker text-center">
         Encontre sua próxima <span className="text-primary">viagem!</span>
-      </h2>
+      </h1>
       <div className="flex flex-col gap-4 mt-5">
         <Input placeholder="Onde Você quer ir?" />
         <div className="flex gap-4">
           <DatePicker placeholderText="Data de Ida" onChange={() => {}} />
           <CurrencyInput placeholder="Orçamento" />
         </div>
-        <Button>Buscar</Button>
+        <Button>Pesquisar</Button>
       </div>
     </div>
   );
