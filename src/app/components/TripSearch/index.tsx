@@ -3,6 +3,7 @@
 import React from "react";
 import Input from "@/components/Input";
 import DatePicker from "@/components/DatePicker";
+import CurrencyInput from "@/components/CurrencyInput";
 
 const TripSearch = () => {
   return (
@@ -14,7 +15,7 @@ const TripSearch = () => {
         <Input placeholder="Onde Você quer ir?" />
         <div className="flex gap-4">
           <DatePicker placeholderText="Data de Ida" onChange={() => {}} />
-          <Input placeholder="Orçamento" />
+          <CurrencyInput placeholder="Orçamento" />
         </div>
       </div>
     </div>
