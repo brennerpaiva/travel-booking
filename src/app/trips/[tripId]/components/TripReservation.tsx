@@ -12,7 +12,7 @@ interface TripReservationProps {
 
 const TripReservation = ({ trip }: TripReservationProps) => {
   return (
-    <div className="flex flex-col px-5 pb-40 border-grayLighter">
+    <div className="flex flex-col px-5 border-grayLighter">
       <div className="flex gap-3">
         <DatePicker placeholderText="Data de Início" onChange={() => {}} />
         <DatePicker placeholderText="Data de Final" onChange={() => {}} />
