@@ -13,37 +13,22 @@ const QuickSearch = () => {
       </div>
       <div className="flex w-full justify-around mt-4">
         <div className="flex flex-col items-center gap-1">
-          <Image
-            width={25}
-            height={25}
-            src="/images/icons/group.png"
-            alt="Hotel"
-          />
+          <Image width={25} height={25} src="/images/group.png" alt="Hotel" />
           <p className="text-sm text-grayPrimary">Hotel</p>
         </div>
         <div className="flex flex-col items-center gap-1">
-          <Image
-            width={25}
-            height={25}
-            src="/images/icons/group.png"
-            alt="Fazenda"
-          />
+          <Image width={25} height={25} src="/images/group.png" alt="Fazenda" />
           <p className="text-sm text-grayPrimary">Fazenda</p>
         </div>
         <div className="flex flex-col items-center gap-1">
-          <Image
-            width={25}
-            height={25}
-            src="/images/icons/group.png"
-            alt="Chalé"
-          />
+          <Image width={25} height={25} src="/images/group.png" alt="Chalé" />
           <p className="text-sm text-grayPrimary">Chalé</p>
         </div>
         <div className="flex flex-col items-center gap-1">
           <Image
             width={25}
             height={25}
-            src="/images/icons/group.png"
+            src="/images/group.png"
             alt="Pousadas"
           />
           <p className="text-sm text-grayPrimary">Pousadas</p>
