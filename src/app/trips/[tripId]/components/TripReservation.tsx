@@ -168,6 +168,7 @@ const TripReservation = ({
 
       <div className="pb-10 border-b border-b-grayLighter w-full">
         <Button
+          variant="primary"
           onClick={() => handleSubmit(onSubmit)()}
           className="mt-3 w-full"
         >
