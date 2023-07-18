@@ -1,19 +1,19 @@
 "use client";
 
+import Button from "@/components/Button";
 import DatePicker from "@/components/DatePicker";
 import Input from "@/components/Input";
-import React from "react";
-import Button from "@/components/Button";
-import { useForm, Controller } from "react-hook-form";
 import { differenceInDays } from "date-fns";
-import { start } from "repl";
+import { useRouter } from "next/navigation";
+import React from "react";
+import { Controller, useForm } from "react-hook-form";
 
 interface TripReservationProps {
   tripId: string;
   tripStartDate: Date;
   tripEndDate: Date;
   maxGuests: number;
-  pricePerDay: number | any;
+  pricePerDay: number;
 }
 
 interface TripReservationForm {
@@ -24,9 +24,9 @@ interface TripReservationForm {
 
 const TripReservation = ({
   tripId,
+  maxGuests,
   tripStartDate,
   tripEndDate,
-  maxGuests,
   pricePerDay,
 }: TripReservationProps) => {
   const {
@@ -37,6 +37,8 @@ const TripReservation = ({
     watch,
     setError,
   } = useForm<TripReservationForm>();
+
+  const router = useRouter();
 
   const onSubmit = async (data: TripReservationForm) => {
     const response = await fetch("http://localhost:3000/api/trips/check", {
@@ -77,6 +79,12 @@ const TripReservation = ({
         message: "Data inválida.",
       });
     }
+
+    router.push(
+      `/trips/${tripId}/confirmation?startDate=${data.startDate?.toISOString()}&endDate=${data.endDate?.toISOString()}&guests=${
+        data.guests
+      }`
+    );
   };
 
   const startDate = watch("startDate");
@@ -150,17 +158,16 @@ const TripReservation = ({
       />
 
       <div className="flex justify-between mt-3">
-        <p className="font-medium text-sm text-primaryDarker">Total:</p>
+        <p className="font-medium text-sm text-primaryDarker">Total: </p>
         <p className="font-medium text-sm text-primaryDarker">
           {startDate && endDate
-            ? `R$${differenceInDays(endDate, startDate) * pricePerDay}`
+            ? `R$${differenceInDays(endDate, startDate) * pricePerDay}` ?? 1
             : "R$0"}
         </p>
       </div>
 
       <div className="pb-10 border-b border-b-grayLighter w-full">
         <Button
-          variant="primary"
           onClick={() => handleSubmit(onSubmit)()}
           className="mt-3 w-full"
         >
@@ -170,4 +177,5 @@ const TripReservation = ({
     </div>
   );
 };
+
 export default TripReservation;
