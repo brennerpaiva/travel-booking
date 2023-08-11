@@ -55,7 +55,7 @@ export async function POST(request: Request) {
       startDate: {
         lte: new Date(req.endDate),
       },
-      EndDate: {
+      endDate: {
         gte: new Date(req.startDate),
       },
     },

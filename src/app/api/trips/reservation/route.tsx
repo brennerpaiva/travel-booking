@@ -25,7 +25,7 @@ export async function POST(request: Request) {
   await prisma.tripReservation.create({
     data: {
       startDate: new Date(startDate),
-      EndDate: new Date(endDate),
+      endDate: new Date(endDate),
       userId,
       tripId,
       totalPaid,
