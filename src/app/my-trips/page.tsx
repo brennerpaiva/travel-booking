@@ -5,7 +5,6 @@ import { useSession } from "next-auth/react";
 import { useRouter } from "next/navigation";
 import { Prisma } from "@prisma/client";
 import Link from "next/link";
-
 import UserReservationItem from "./components/UserReservationItem";
 import Button from "@/components/Button";
 
@@ -47,7 +46,7 @@ const MyTrips = () => {
         </div>
       ) : (
         <div className="flex flex-col lg:max-w-[500px]">
-          <p className="mt-2 font-medium text-primaryDarker">Você ainda não tem nenhuma reserva! =</p>
+          <p className="mt-2 font-medium text-primaryDarker">Você ainda não tem nenhuma reserva! =(</p>
 
           <Link href="/">
             <Button className="w-full mt-2 lg:mt-5">Fazer reserva</Button>

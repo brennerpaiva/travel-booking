@@ -1,11 +1,7 @@
 import { prisma } from "@/lib/prisma";
 import { NextResponse } from "next/server";
 
-const generateSearchQuery = (
-  text: string,
-  startDate?: string | null,
-  budget?: string | null
-) => {
+const generateSearchQuery = (text: string, startDate?: string | null, budget?: string | null) => {
   let searchQuery: any = {
     OR: [
       {
@@ -14,7 +10,7 @@ const generateSearchQuery = (
         },
       },
       {
-        description: {
+        descripption: {
           search: text,
         },
       },
