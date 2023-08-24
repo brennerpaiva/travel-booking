@@ -12,7 +12,7 @@ const QuickSearch = () => {
         </h2>
         <div className="w-full h-[2px] bg-grayLighter"></div>
       </div>
-      <div className="flex w-full justify-around mt-4">
+      <div className="flex w-full mt-4 justify-between lg:justify-center lg:gap-40 lg:mt-10 ">
         <div className="flex flex-col items-center gap-1">
           <Link
             href={`/trips/search?text=hotel`}
