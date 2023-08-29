@@ -1,11 +1,11 @@
 "use client";
 
-import React from "react";
-import { useRouter } from "next/navigation";
-import Input from "@/components/Input";
-import DatePicker from "@/components/DatePicker";
-import CurrencyInput from "@/components/CurrencyInput";
 import Button from "@/components/Button";
+import CurrencyInput from "@/components/CurrencyInput";
+import DatePicker from "@/components/DatePicker";
+import Input from "@/components/Input";
+import { useRouter } from "next/navigation";
+import React from "react";
 import { Controller, useForm } from "react-hook-form";
 
 interface TripSearchForm {
@@ -25,19 +25,16 @@ const TripSearch = () => {
   } = useForm<TripSearchForm>();
 
   const onSubmit = (data: TripSearchForm) => {
-    router.push(
-      `/trips/search?text=${
-        data.text
-      }&startDate=${data.startDate?.toISOString()}&budget=${data.budget}`
-    );
+    router.push(`/trips/search?text=${data.text}&startDate=${data.startDate?.toISOString()}&budget=${data.budget}`);
   };
 
   return (
     <div className="container mx-auto p-5 bg-search-background bg-cover bg-center bg-no-repeat lg:py-28">
-      <h1 className="font-semibold text-2xl text-primaryDarker text-center lg:text-[2.rem]">
+      <h1 className="font-semibold text-2xl text-primaryDarker text-center lg:text-[2.5rem]">
         Encontre sua próxima <span className="text-primary">viagem!</span>
       </h1>
-      <div className="flex flex-col gap-4 mt-5 lg:flex-row lg:max-w-[948px] lg:mx-auto lg:p-4 lg:bg-primary lg:bg-opacity-20 lg:rounded-lg lg:mt-12">
+
+      <div className="flex flex-col gap-4 mt-5 lg:flex-row lg:max-w-[948px] lg:mx-auto lg:p-4 lg:bg-primary lg:mt-12 lg:bg-opacity-20 lg:rounded-lg">
         <Input
           placeholder="Onde você quer ir?"
           error={!!errors.text}
@@ -49,18 +46,13 @@ const TripSearch = () => {
             },
           })}
         />
+
         <div className="flex gap-4 lg:w-full">
           <Controller
             name="startDate"
             control={control}
             render={({ field }) => (
-              <DatePicker
-                onChange={field.onChange}
-                selected={field.value}
-                placeholderText="Data Final"
-                className="w-full"
-                minDate={new Date()}
-              />
+              <DatePicker onChange={field.onChange} selected={field.value} placeholderText="Data Final" className="w-full" minDate={new Date()} />
             )}
           />
 
@@ -78,7 +70,10 @@ const TripSearch = () => {
             )}
           />
         </div>
-        <Button onClick={() => handleSubmit(onSubmit)()} className="w-1/2">Buscar</Button>
+
+        <Button onClick={() => handleSubmit(onSubmit)()} className="w-1/2 lg:h-fit">
+          Buscar
+        </Button>
       </div>
     </div>
   );
