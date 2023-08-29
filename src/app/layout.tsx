@@ -9,7 +9,7 @@ const poppins = Poppins({ subsets: ["latin"], weight: ["400", "500", "600", "700
 
 export const metadata = {
   title: "FSW Trips",
-  description: "Sistema de Reserva de Viagens TOP!",
+  description: "Sistema de Reserva de Viagens",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

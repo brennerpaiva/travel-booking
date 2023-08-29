@@ -13,7 +13,7 @@ const TripHighlights = ({ highlights }: TripHighlightsProps) => {
       <div className="flex flex-wrap gap-y-3 lg:mt-5">
         {highlights.map((highlight, index) => (
           <div key={highlight} className="flex items-center gap-2 lg:gap-3 w-1/2">
-            <Image src="/check-icon.png" width={15} height={15} alt={highlight} />
+            <Image src="/Check-icon.svg" width={15} height={15} alt={highlight} />
 
             <p className="text-grayPrimary text-xs lg:text-base">{highlight}</p>
           </div>

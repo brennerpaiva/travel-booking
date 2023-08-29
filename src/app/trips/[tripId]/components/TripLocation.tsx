@@ -25,7 +25,7 @@ const TripLocation = ({ location, locationDescription }: TripLocationProps) => {
 
       <div className="relative h-[480px] w-full hidden lg:block">
         <Image
-          src="/images/map-desktop.png"
+          src="/Location.svg"
           alt={location}
           fill
           style={{

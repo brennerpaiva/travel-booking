@@ -23,8 +23,8 @@ const Header = () => {
   return (
     <div className="container mx-auto p-5 py-0 h-[93px] flex justify-between items-center lg:border-b lg:border-grayLighter">
       <Link href="/">
-        <div className="relative h-[32px] w-[182px]">
-          <Image src="/logo.png" alt="Full Stack Week" fill />
+        <div className="relative h-[56px] w-[200px] bg-cover">
+          <Image src="/logo.svg" alt="Full Stack Week" fill />
         </div>
       </Link>
 

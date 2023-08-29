@@ -6,11 +6,11 @@ const QuickSearch = () => {
   return (
     <div className="container mx-auto p-5">
       <div className="flex items-center">
-        <div className="w-full h-[2px] bg-grayLighter"></div>
-        <h2 className="px-5 font-medium text-grayPrimary whitespace-nowrap">
+        <div className="w-full h-[1px] bg-grayLighter"></div>
+        <h2 className="px-5 font-semibold text-grayPrimary whitespace-nowrap">
           Tente Pesquisar Por
         </h2>
-        <div className="w-full h-[2px] bg-grayLighter"></div>
+        <div className="w-full h-[1px] bg-grayLighter"></div>
       </div>
       <div className="flex w-full mt-4 justify-between lg:justify-center lg:gap-40 lg:mt-10 ">
         <div className="flex flex-col items-center gap-1">
@@ -18,7 +18,10 @@ const QuickSearch = () => {
             href={`/trips/search?text=hotel`}
             className="flex flex-col items-center hover:text-primary transition-all"
           >
-            <Image width={25} height={25} src="/images/group.png" alt="Hotel" />
+            <Image width={65}
+            height={65}
+            src="/Resort.svg"
+            alt="Hotel" />
             <p className="text-sm text-grayPrimary">Hotel</p>
           </Link>
         </div>
@@ -28,9 +31,9 @@ const QuickSearch = () => {
             className="flex flex-col items-center hover:text-primary transition-all"
           >
             <Image
-              width={25}
-              height={25}
-              src="/images/group.png"
+              width={65}
+              height={65}
+              src="/farm.svg"
               alt="Fazenda"
             />
             <p className="text-sm text-grayPrimary">Fazenda</p>
@@ -38,11 +41,16 @@ const QuickSearch = () => {
         </div>
         <div className="flex flex-col items-center gap-1">
           <Link
-            href={`/trips/search?text=chalé`}
+            href={`/trips/search?text=fazenda`}
             className="flex flex-col items-center hover:text-primary transition-all"
           >
-            <Image width={25} height={25} src="/images/group.png" alt="Chalé" />
-            <p className="text-sm text-grayPrimary">Chalé</p>
+            <Image
+              width={65}
+              height={65}
+              src="/Resort.svg"
+              alt="Resorts"
+            />
+            <p className="text-sm text-grayPrimary">Resorts</p>
           </Link>
         </div>
         <div className="flex flex-col items-center gap-1">
@@ -51,9 +59,9 @@ const QuickSearch = () => {
             className="flex flex-col items-center hover:text-primary transition-all"
           >
             <Image
-              width={25}
-              height={25}
-              src="/images/group.png"
+              width={65}
+              height={65}
+              src="/Pousada.svg"
               alt="Pousada"
             />
             <p className="text-sm text-grayPrimary">Pousada</p>
