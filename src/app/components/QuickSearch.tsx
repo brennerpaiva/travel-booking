@@ -33,7 +33,7 @@ const QuickSearch = () => {
             <Image
               width={65}
               height={65}
-              src="/farm.svg"
+              src="/Resort.svg"
               alt="Fazenda"
             />
             <p className="text-sm text-grayPrimary">Fazenda</p>
@@ -61,7 +61,7 @@ const QuickSearch = () => {
             <Image
               width={65}
               height={65}
-              src="/Pousada.svg"
+              src="/Resort.svg"
               alt="Pousada"
             />
             <p className="text-sm text-grayPrimary">Pousada</p>

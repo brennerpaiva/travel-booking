@@ -106,7 +106,7 @@ const TripReservation = ({ tripId, maxGuests, tripStartDate, tripEndDate, priceP
               selected={field.value}
               placeholderText="Data de Início"
               className="w-full"
-              minDate={tripStartDate}
+              minDate={new Date()}
             />
           )}
         />
