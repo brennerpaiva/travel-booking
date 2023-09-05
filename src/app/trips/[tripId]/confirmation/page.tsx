@@ -67,7 +67,7 @@ const TripConfirmation = ({ params }: { params: { tripId: string } }) => {
           totalPrice,
           coverImage: trip.coverImage,
           name: trip.name,
-          description: trip.descripttion,
+          description: trip.description,
         })
       ),
     });

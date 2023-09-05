@@ -37,7 +37,7 @@ const TripDetails = async ({ params }: { params: { tripId: string } }) => {
         </div>
 
         <div className="lg:order-1">
-          <TripDescription description={trip.descripttion} />
+          <TripDescription description={trip.description} />
           <TripHighlights highlights={trip.highlights} />
         </div>
       </div>

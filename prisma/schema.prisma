@@ -19,7 +19,7 @@ model Trip {
   startDate           DateTime
   endDate             DateTime
   pricePerDay         Decimal           @db.Decimal(8, 2) // 1199.90
-  descripttion        String
+  description         String
   coverImage          String
   imagesUrl           String[]
   highlights          String[]
