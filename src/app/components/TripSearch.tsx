@@ -52,7 +52,7 @@ const TripSearch = () => {
             name="startDate"
             control={control}
             render={({ field }) => (
-              <DatePicker onChange={field.onChange} selected={field.value} placeholderText="Data Final" className="w-full" minDate={new Date()} />
+              <DatePicker onChange={field.onChange} selected={field.value} placeholderText="Check-in" className="w-full" minDate={new Date()} />
             )}
           />
 

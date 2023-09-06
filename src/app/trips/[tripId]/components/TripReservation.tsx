@@ -85,7 +85,7 @@ const TripReservation = ({ tripId, maxGuests, tripStartDate, tripEndDate, priceP
   return (
     <div className="flex flex-col px-5 lg:min-w-[380px] lg:p-5 lg:border-grayLighter lg:border lg:rounded-lg lg:shadow-md">
       <p className="text-xl hidden text-primaryDarker mb-4 lg:block">
-        <span className="font-semibold">R${pricePerDay}</span> por dia
+        <span className="font-semibold">R${pricePerDay}</span> por noite
       </p>
 
       <div className="flex gap-4">
@@ -104,7 +104,7 @@ const TripReservation = ({ tripId, maxGuests, tripStartDate, tripEndDate, priceP
               errorMessage={errors?.startDate?.message}
               onChange={field.onChange}
               selected={field.value}
-              placeholderText="Data de Início"
+              placeholderText="Check-in"
               className="w-full"
               minDate={new Date()}
             />
@@ -126,7 +126,7 @@ const TripReservation = ({ tripId, maxGuests, tripStartDate, tripEndDate, priceP
               errorMessage={errors?.endDate?.message}
               onChange={field.onChange}
               selected={field.value}
-              placeholderText="Data Final"
+              placeholderText="Check-out"
               className="w-full"
               maxDate={tripEndDate}
               minDate={startDate ?? tripStartDate}

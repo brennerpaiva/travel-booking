@@ -29,15 +29,13 @@ const generateSearchQuery = (text: string, startDate?: string | null, budget?: s
       AND: [
         ...searchQuery.AND,
         {
-          startDate: {
+          endDate: {
             gte: startDate,
           },
         },
       ],
     };
   }
-
-  console.log({ budget });
 
   if (budget !== "undefined" && budget !== "null") {
     searchQuery = {

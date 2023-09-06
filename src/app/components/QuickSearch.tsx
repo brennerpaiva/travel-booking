@@ -41,16 +41,16 @@ const QuickSearch = () => {
         </div>
         <div className="flex flex-col items-center gap-1">
           <Link
-            href={`/trips/search?text=fazenda`}
+            href={`/trips/search?text=chalé`}
             className="flex flex-col items-center hover:text-primary transition-all"
           >
             <Image
               width={65}
               height={65}
               src="/Resort.svg"
-              alt="Resorts"
+              alt="Chalé"
             />
-            <p className="text-sm text-grayPrimary">Resorts</p>
+            <p className="text-sm text-grayPrimary">Chalé</p>
           </Link>
         </div>
         <div className="flex flex-col items-center gap-1">
