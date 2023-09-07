@@ -46,6 +46,8 @@ Aplicação web desenvolvida para facilitar a busca, visualização e reserva de
 
 - <img width="20px" src="https://skillicons.dev/icons?i=tailwind" /> Tailwind CSS: O Tailwind CSS é a biblioteca de estilização utilizada, aproveitando recursos como classes utilitárias para facilitar a estilização.
 
+- <img width="20px" src="https://skillicons.dev/icons?i=nodejs" />  Node.js: O Node.js é a plataforma de tempo de execução utilizada para o desenvolvimento do servidor e da lógica de back-end da aplicação.
+  
 - <img width="20px" src="https://skillicons.dev/icons?i=prisma" />  Prisma: Foi utilizado o Prisma como ORM (Object-Relational Mapping) para simplificar a interação com o banco de dados PostgreSQL.
 
 - <img width="20px" src="https://github.com/nextauthjs/next-auth/blob/main/docs/static/img/logo/logo.png" /> NextAuth.js: O sistema de autenticação foi implementado utilizando o NextAuth.js, com suporte para autenticação via Gmail.
