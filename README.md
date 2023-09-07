@@ -4,7 +4,7 @@
 
 ## Visão Geral
 
-O TripIt uma aplicação web desenvolvida para facilitar a busca, visualização e reserva de viagens. A aplicação oferece uma série de recursos para tornar a experiência dos usuários agradável e segura. O sistema foi criado durante a Full Stack Week onde tive a oportunidade de aprender mais sobre tecnologias front-end e back-end. 
+Aplicação web desenvolvida para facilitar a busca, visualização e reserva de viagens. A aplicação oferece uma série de recursos para tornar a experiência dos usuários agradável e segura. O sistema foi criado durante a Full Stack Week onde tive a oportunidade de aprender mais sobre tecnologias front-end e back-end. 
 
 ## Funcionalidades
 
