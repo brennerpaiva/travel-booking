@@ -2,7 +2,7 @@
 
 ## Visão Geral
 
-O Sistema de Reserva de Viagens é uma aplicação web que foi criada durante a Full Stack Week. O sistema permite aos usuários buscar e reservar viagens de acordo com sua localização, data inicial e orçamento máximo. Além disso, os usuários podem visualizar detalhes completos de uma viagem, incluindo fotos, descrição, comodidades, preço por noite, data disponível, número de hóspedes permitidos e localização. A aplicação também suporta a funcionalidade de ver viagens reservadas, cancelar reservas e garantir a disponibilidade de datas e limites de hóspedes.
+O TripIt uma aplicação web desenvolvida para facilitar a busca, visualização e reserva de viagens. A aplicação oferece uma série de recursos para tornar a experiência dos usuários agradável e segura. O Sistema de Reserva de Viagens foi criado durante a Full Stack Week onde tive a oportunidade de aprender mais sobre tecnologias front-end e back-end. 
 
 ## Funcionalidades
 
@@ -38,17 +38,17 @@ O Sistema de Reserva de Viagens é uma aplicação web que foi criada durante a 
 
 ## Tecnologias Utilizadas
 
-- Next.js: O Next.js é o framework utilizado para o desenvolvimento do front-end da aplicação, proporcionando uma experiência de página única (SPA) com suporte a roteamento e renderização do lado do servidor (SSR).
+ - <img width="20px" src="https://github.com/tandpfun/skill-icons/blob/main/icons/NextJS-Light.svg" /> Next.js: O Next.js é o framework utilizado para o desenvolvimento do front-end da aplicação, proporcionando uma experiência de página única (SPA) com suporte a roteamento e renderização do lado do servidor (SSR).
 
-- TypeScript: O TypeScript é utilizado para fornecer tipagem estática ao código, melhorando a segurança e a manutenibilidade.
+- <img width="20px" src="https://skillicons.dev/icons?i=typescript" />  TypeScript: O TypeScript é utilizado para fornecer tipagem estática ao código, melhorando a segurança e a manutenibilidade.
 
-- Tailwind CSS: O Tailwind CSS é a biblioteca de estilização utilizada, aproveitando recursos como classes utilitárias para facilitar a estilização e manutenção do código.
+- <img width="20px" src="https://skillicons.dev/icons?i=tailwind" /> Tailwind CSS: O Tailwind CSS é a biblioteca de estilização utilizada, aproveitando recursos como classes utilitárias para facilitar a estilização.
 
-- Prisma: Foi utilizado o Prisma como ORM (Object-Relational Mapping) para simplificar a interação com o banco de dados PostgreSQL.
+- <img width="20px" src="https://skillicons.dev/icons?i=prisma" />  Prisma: Foi utilizado o Prisma como ORM (Object-Relational Mapping) para simplificar a interação com o banco de dados PostgreSQL.
 
-- NextAuth.js: O sistema de autenticação foi implementado utilizando o NextAuth.js, com suporte para autenticação via Gmail.
+- <img width="20px" src="https://github.com/nextauthjs/next-auth/blob/main/docs/static/img/logo/logo.png" /> NextAuth.js: O sistema de autenticação foi implementado utilizando o NextAuth.js, com suporte para autenticação via Gmail.
 
-- Bibliotecas Adicionais: A aplicação utiliza diversas bibliotecas, incluindo React Date Picker, date-fns, React Currency Input Field, react-toastify e outras para melhorar a usabilidade e a funcionalidade.
+- <img width="20px" src="https://cdn-icons-png.flaticon.com/128/756/756940.png" /> Bibliotecas Adicionais: A aplicação utiliza diversas bibliotecas, incluindo React Date Picker, date-fns, React Currency Input Field, react-toastify e outras para melhorar a usabilidade e a funcionalidade.
 
 
 ## Integração do Stripe
