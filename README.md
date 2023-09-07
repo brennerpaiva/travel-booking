@@ -1,8 +1,10 @@
-# Sistema de Reserva de Viagens
+<h1 align="center">TripIt - Sistema de Reserva de Viagens</h1>
+
+![print-tripit](https://github.com/brennerpaiva/travel-booking/assets/114958953/4fa0a142-9cf6-4a25-94ae-acd1aef91fa4)
 
 ## Visão Geral
 
-O TripIt uma aplicação web desenvolvida para facilitar a busca, visualização e reserva de viagens. A aplicação oferece uma série de recursos para tornar a experiência dos usuários agradável e segura. O Sistema de Reserva de Viagens foi criado durante a Full Stack Week onde tive a oportunidade de aprender mais sobre tecnologias front-end e back-end. 
+O TripIt uma aplicação web desenvolvida para facilitar a busca, visualização e reserva de viagens. A aplicação oferece uma série de recursos para tornar a experiência dos usuários agradável e segura. O sistema foi criado durante a Full Stack Week onde tive a oportunidade de aprender mais sobre tecnologias front-end e back-end. 
 
 ## Funcionalidades
 
@@ -13,14 +15,14 @@ O TripIt uma aplicação web desenvolvida para facilitar a busca, visualização
 ### Ver Detalhes de uma Viagem
 
 - Os usuários podem visualizar detalhes completos de uma viagem, incluindo:
-  - Fotos (4)
+  - Fotos
   - Descrição da viagem
   - Imagem de capa da viagem
   - Destaques (como Wi-Fi, piscina, etc.)
   - Preço por noite
   - Datas disponíveis
   - Número de hóspedes permitidos
-  - Localização
+  - Detalhes da Localização
 
 ### Reservar Viagens
 
@@ -57,5 +59,29 @@ O Stripe é utilizado para processar pagamentos de forma segura e eficiente. A i
 
 ![tripIt-fluxo drawio (2)](https://github.com/brennerpaiva/travel-booking/assets/114958953/f056f97e-8f26-4259-a06d-6a1d402f49b3)
 
+## Clone o repositório usando o GIT </strong>
+
+```
+git clone https://github.com/brennerpaiva/travel-booking
+```
+
+<br>
+
+
+<strong> 2️ • Instale as dependências do projeto</strong>
+
+```
+npm install
+```
+
+<br>
+
+<strong> 3 • Inicie a aplicações em um servidor local</strong>
+
+```
+npm run dev
+```
+
+<br>
 
 
