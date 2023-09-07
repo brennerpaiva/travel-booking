@@ -1,34 +1,61 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Sistema de Reserva de Viagens
 
-## Getting Started
+## Visão Geral
 
-First, run the development server:
+O Sistema de Reserva de Viagens é uma aplicação web que foi criada durante a Full Stack Week. O sistema permite aos usuários buscar e reservar viagens de acordo com sua localização, data inicial e orçamento máximo. Além disso, os usuários podem visualizar detalhes completos de uma viagem, incluindo fotos, descrição, comodidades, preço por noite, data disponível, número de hóspedes permitidos e localização. A aplicação também suporta a funcionalidade de ver viagens reservadas, cancelar reservas e garantir a disponibilidade de datas e limites de hóspedes.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+## Funcionalidades
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Buscar Viagens
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- Os usuários podem pesquisar viagens com base em critérios específicos, incluindo localização, data de início da viagem e orçamento máximo. 
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+### Ver Detalhes de uma Viagem
 
-## Learn More
+- Os usuários podem visualizar detalhes completos de uma viagem, incluindo:
+  - Fotos (4)
+  - Descrição da viagem
+  - Imagem de capa da viagem
+  - Destaques (como Wi-Fi, piscina, etc.)
+  - Preço por noite
+  - Datas disponíveis
+  - Número de hóspedes permitidos
+  - Localização
 
-To learn more about Next.js, take a look at the following resources:
+### Reservar Viagens
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- Os usuários logados podem reservar viagens e o sistema garante que:
+  - A data selecionada não foi reservada por outro usuário
+  - O número máximo de hóspedes é respeitado
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+### Ver Viagens Reservadas
 
-## Deploy on Vercel
+- Os usuários logados tem a opção de visualizar as viagens que reservaram anteriormente. Isso fornece uma maneira conveniente de gerenciar as viagens confirmadas.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Cancelar Viagens Reservadas
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- Os usuários logados podem cancelar viagens reservadas, e o sistema garante que a data fique disponível.
+
+## Tecnologias Utilizadas
+
+- Next.js: O Next.js é o framework utilizado para o desenvolvimento do front-end da aplicação, proporcionando uma experiência de página única (SPA) com suporte a roteamento e renderização do lado do servidor (SSR).
+
+- TypeScript: O TypeScript é utilizado para fornecer tipagem estática ao código, melhorando a segurança e a manutenibilidade.
+
+- Tailwind CSS: O Tailwind CSS é a biblioteca de estilização utilizada, aproveitando recursos como classes utilitárias para facilitar a estilização e manutenção do código.
+
+- Prisma: Foi utilizado o Prisma como ORM (Object-Relational Mapping) para simplificar a interação com o banco de dados PostgreSQL.
+
+- NextAuth.js: O sistema de autenticação foi implementado utilizando o NextAuth.js, com suporte para autenticação via Gmail.
+
+- Bibliotecas Adicionais: A aplicação utiliza diversas bibliotecas, incluindo React Date Picker, date-fns, React Currency Input Field, react-toastify e outras para melhorar a usabilidade e a funcionalidade.
+
+
+## Integração do Stripe
+
+O Stripe é utilizado para processar pagamentos de forma segura e eficiente. A integração do Stripe permite aos usuários realizar pagamentos por cartão de crédito e débito diretamente pela plataforma. O Stripe é configurado em "modo de teste" durante o desenvolvimento, garantindo que todas as transações sejam simuladas e seguras.
+
+![tripIt-fluxo drawio (2)](https://github.com/brennerpaiva/travel-booking/assets/114958953/f056f97e-8f26-4259-a06d-6a1d402f49b3)
+
+
+
