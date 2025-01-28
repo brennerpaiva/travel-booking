@@ -1,13 +1,15 @@
+import { prisma } from "@/lib/prisma";
 import QuickSearch from "./components/QuickSearch";
-import RecomendedTrips from "./components/RecomendedTrips";
+import RecommendedTrips from "./components/RecomendedTrips";
 import TripSearch from "./components/TripSearch";
 
-export default function Home() {
+export default async function Home() {
+  const trips = await prisma.trip.findMany();
   return (
     <div>
       <TripSearch />
       <QuickSearch />
-      <RecomendedTrips />
+      <RecommendedTrips trips={trips} />
     </div>
   );
 }

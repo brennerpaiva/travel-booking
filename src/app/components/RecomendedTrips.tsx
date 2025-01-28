@@ -1,22 +1,11 @@
 import TripItem from "@/components/TripItem";
-import { prisma } from "@/lib/prisma";
 import { Trip } from "@prisma/client";
 
-export async function getServerSideProps() {
-  try {
-    const trips = await prisma.trip.findMany();
-    return {
-      props: { trips },
-    };
-  } catch (error) {
-    console.error("Failed to fetch trips:", error);
-    return {
-      props: { trips: [] },
-    };
-  }
+interface RecommendedTripsProps {
+  trips: Trip[];
 }
 
-const RecommendedTrips = ({ trips }: { trips: Trip[] }) => {
+const RecommendedTrips = ({ trips }: RecommendedTripsProps) => {
   return (
     <div className="container mx-auto p-5">
       <div className="flex items-center">
@@ -28,7 +17,7 @@ const RecommendedTrips = ({ trips }: { trips: Trip[] }) => {
       </div>
 
       <div className="flex flex-col items-center mt-5 lg:mt-12 gap-5 lg:flex-row gap lg:flex-wrap lg:justify-center lg:gap-10">
-        {trips.map((trip: Trip) => (
+        {trips.map((trip) => (
           <TripItem key={trip.id} trip={trip} />
         ))}
       </div>
